@@ -1,15 +1,15 @@
 # chiffrement-dechiffrement-cesar-et-implementation-enigma
 
 Séance 2 - Travaux Pratiques
+
 Cryptanalyse à chiffrés connus (chiffrements historiques)
-Yann Rotella
-2026
+
 L’objectif de cette séance est d’appliquer en programmation certaines cryptanalyses vues en cours
 et dans le premier TD. Pour bien comprendre les cryptosystèmes, il faudra les programmer en Python,
 vérifier que le déchiffrement fonctionne bien. Une bonne manière de vérifier que l’on ne fait pas de bêtise
 est de comparer les résultats des fonctions avec les autres. La cryptanalyse de Vigenère est donnée en
 exercice complémentaire.
-Échauffement - seul.e - 30 minutes
+
 Exercice 1. César .
 Pour se simplifier la vie, nous allons considérer que nous allons chiffrer uniquement des textes écrits en
 français, sans accents.
@@ -22,9 +22,9 @@ avec le chiffrement de César.
 (4) Coder la fonction de déchiffrement.
 (5) Coder la fonction cryptanalyseFrequence qui prend en entrée une chaîne de caractères, compte
 l’apparition maximale et renvoie la clef secrète associée.
-1
-Cryptanalyse d’Enigma - en groupe - 2h30
-Exercice 2. Enigma - Simuler la machine.
+
+Cryptanalyse d’Enigma
+Exercice 2. Enigma - Simuler la machine
 On va commencer par avoir notre propre code d’Enigma.
 (1) Sous forme de 5 listes, mettez en dur dans 5 listes globales les permutations des rotors définis au
 TD 1. Attention, peut être que commencer à compter à partir de 0 peut être intéressant.
@@ -68,9 +68,10 @@ Est-ce que cela tient en mémoire RAM ?
 rotors. On veillera à transmettre suffisamment de messages clefs.
 (9) Si on suppose que les messages clefs du jour sont choisis aléatoirement, est-ce possible de retrouver
 avec ces seules informations, la configuration du tableau de connexion ?
-2
+
 Exercice complémentaire
 Exercice 4. Chiffre de Battista (Vigenère).
+
 On va maintenant programmer l’attaque vue en cours sur ce chiffrement.
 (1) Coder une fonction qui prend en entrée une clef sous la forme d’une chaîne de caractères en
 majuscules, un message en français en majuscules et sans ponctuation ni accent et renvoie le
